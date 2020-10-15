@@ -100,6 +100,7 @@ ASAuthorizationControllerPresentationContextProviding
 
 - (void)authorizationController:(ASAuthorizationController *)controller didCompleteWithError:(NSError *)error {
     // 鉴权失败
+    NSLog(@"err: %@", error);
 }
 
 - (ASPresentationAnchor)presentationAnchorForAuthorizationController:(ASAuthorizationController *)controller {
